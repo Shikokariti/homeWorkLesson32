@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>Calc Salary</title>
+  <script type="module" src="run.js" defer></script>
+  <style>
+    input {
+      margin-top: 5px;
+      width: 150px;
+      margin-left: 32px;
+    }
+    label {
+      text-decoration: underline;
+    }
+    button {
+      margin-top: 10px;
+      background-color: #7cceca;
+    }
+    h1 {
+      color: #317269;
+    }
+    body {
+      text-align: right;
+      direction: rtl;
+    }
+    #newFormBtn , #activeUserForm {
+      display: none;
+    }
+    #netoValue, #netoHeader, #user {
+      display: inline;
+    }
+    #netoValue, #netoHeader {
+      color: #3376ce;
+    }
+  </style>
+</head>
+<body>
+  <h1>הכנס פרטים לחישוב שכר</h1>
+  <button type="button" id="newFormBtn">חזור בכדי למלא טופס חדש</button>
+  <form id="newUserForm">
+    <label>שם פרטי</label>
+    <input id="firstName" type="text"> </br>
+    <label>שם משפחה</label>
+    <input id="lastName" type="text"> </br>
+    <label>שכר חודשי</label>
+    <input id="monthlySalary" type="number"> </br>
+    <label>אחוז הפנסיה מהשכר</label>
+    <input id="percentageForPension" type="number"> </br>
+    <label>אחוז קרן השתלמות מהשכר</label>
+    <input id="percentageForTrainingFund" type="number"> </br>
+    <button id="sendForm" type="button">שלח</button>
+  </form>
+  <form id="activeUserForm">
+  <ul>
+    <li id="broto">שכר חודשי ברוטו:</li>
+    <li>פנסיה:</li>
+    <ul>
+      <li id="pensionPercentage">אחוז</li>
+      <li id="pensionValue">ערך</li>
+    </ul>
+    <li>קרן השתלמות:</li>
+    <ul>
+      <li id="trainingFundPercentage">אחוז</li>
+      <li id="trainingFundValue">ערך</li>
+    </ul>
+    <li>מס הכנסה:</li>
+    <ul>
+      <li id="taxPercentage">אחוז</li>
+      <li id="taxValue">ערך</li>
+    </ul>
+  </ul>
+    <h1 id="user"></h1>
+    <h2 id="netoHeader">שכר נטו:</h2>
+    <h2 id="netoValue">שכר נטו:</h2>
+  </form>
+
+</body>
+</html>
+

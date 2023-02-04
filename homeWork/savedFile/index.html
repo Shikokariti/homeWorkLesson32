@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saved File</title>
+  <script type="text/javascript" src="script.js" defer></script>
+  <style>
+    input {
+      margin-top: 5px;
+      width: 150px;
+      margin-left: 32px;
+    }
+    label {
+      text-decoration: underline;
+    }
+    button {
+      margin-top: 10px;
+      background-color: #7cceca;
+    }
+    h1 {
+      color: #317269;
+    }
+    body {
+      text-align: center;
+    }
+    #phone , #email {
+      margin-left: 64px;
+    }
+    #dateOfBirth {
+      margin-left: 1px;
+    }
+    #dateOfBirthLabel {
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Info</h1>
+  <h4 id="success"></h4>
+  <form id="newUserForm">
+    <label>First Name</label>
+    <input id="firstName" type="text"> </br>
+    <label>Last Name</label>
+    <input id="lastName" type="text"> </br>
+    <label>Phone</label>
+    <input id="phone" type="number"> </br>
+    <label>Email</label>
+    <input id="email" type="email"> </br>
+    <label id="dateOfBirthLabel">Date Of Birth</label>
+    <input id="dateOfBirth" type="date"> </br>
+    <button id="saveDetails" type="button">Save Details</button>
+  </form>
+
+</body>
+</html>
